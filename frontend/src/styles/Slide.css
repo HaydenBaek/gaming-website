@@ -1,0 +1,99 @@
+.slider-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slide box */
+.slide-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slide-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Center the arrows BELOW the slider */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    bottom: -60px;  /* Lower arrows below the slider */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Custom Arrow Styling */
+.custom-arrow {
+    font-size: 40px;
+    color: ornage;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999999;
+    display: flex !important;
+}
+
+.custom-arrow:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .custom-arrow {
+        font-size: 32px;
+        padding: 5px 15px;
+    }
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;  /* Ensure it's above everything */
+}
+
+.custom-arrow {
+    font-size: 40px;
+    color: white;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: cyan;
+    transform: translateY(-3px);
+}
+
