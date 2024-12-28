@@ -25,7 +25,7 @@ function BrandBanner({
         padding: '40px',
         gap: 3,
         position: 'relative',
-        background: `linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))`,
+        background: `linear-gradient(145deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0))`,
         borderRadius: '20px',
         boxShadow: `0px 0px 50px 10px ${glowColorStart}, 
                     0px 0px 80px 30px ${glowColorEnd}`,
@@ -36,7 +36,8 @@ function BrandBanner({
                       0px 0px 100px 50px ${glowColorStart}`
         },
         border: `1px solid ${glowColorStart}`,
-        backdropFilter: 'blur(15px)'
+        backdropFilter: 'blur(7px)'
+
       }}
     >
       <Typography

@@ -1,0 +1,230 @@
+
+/* Animation for Gradient Text */
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* General Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;  /* Push content slightly below navbar */
+    background-attachment: fixed;  /* Keeps background fixed during scroll */
+}
+
+/* Keep content above background */
+.section > * {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;  /* Control width of content */
+}
+
+/* Logitech First Section */
+.razerFirst {
+    background-image: url("/Users/haydenbaek/Desktop/side_projects/gaming-website/frontend/src/images/razerBackground.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;  /* Push content down slightly */
+}
+
+/* Section 2 - Black Background */
+.razerSecond {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    padding: 100px 20px;
+}
+
+
+.logitechMouse{
+    background-color: #04A5E5;
+}
+
+.razerKeyboard, 
+.razerThird {
+    background-image: linear-gradient(45deg, white, #66B933, #DFFF00, #50C878);
+    animation: rainbowAnimation 5s ease infinite;
+    background-size: 400% 400%;
+    animation-delay: 0s;  /* Ensure no delay */
+    animation-timing-function: ease;  /* Smooth consistent timing */
+}
+
+
+
+.razerFourth {
+    background-image: linear-gradient(45deg, black, #343434, #36454F, #1B1B1B);
+    animation: rainbowAnimation 5s ease infinite;
+    background-size: 400% 400%;
+    animation-delay: 0s;  /* Ensure no delay */
+    animation-timing-function: ease;  /* Smooth consistent timing */
+}
+
+.razerFifth {
+    background-color: black;
+    background-image: url('https://assets2.razerzone.com/images/downloads-page/desktop-wallpapers/cyber-city-1920x1080.jpg?_gl=1*ws1xyd*_gcl_au*MTY3NTQzMDY5Mi4xNzM1MTE0MjQ5');
+    background-size: cover; /* Ensures full coverage, may crop */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh;  /* Full viewport height */
+    width: 100%;  /* Full width */
+}
+
+
+/* Ensure banner stays at the top middle */
+.logitechFirst > * {
+    max-width: 800px;  /* Limit banner width */
+    margin: 0 auto;    /* Center horizontally */
+}
+
+/* Banner and Typography Styles */
+.welcome-banner {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Blue Gradient Text */
+.green-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, white, #66B933, #DFFF00, #50C878);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;  /* Fallback for unsupported browsers */
+    animation: rainbowAnimation 3s ease infinite;
+    text-align: center;
+}
+
+.black-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, white, #66B933, #DFFF00, #50C878);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;  /* Fallback for unsupported browsers */
+    animation: rainbowAnimation 2s ease infinite;
+    text-align: center;
+}
+
+/* Smaller Text Gradient */
+.razerKeyboard {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, black, #343434, #36454F, #2B1B17, #1B1B1B);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;  /* Fallback for unsupported browsers */
+    animation: rainbowAnimation 4s ease infinite;
+    text-align: center;
+}
+
+/* Responsive Section Content */
+.section-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Product Card Styling */
+.product-card {
+    max-width: 500px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Media Image */
+.card-media {
+    object-fit: contain;
+    width: 100%;
+    max-height: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding-top: 80px;
+    }
+
+    .blue-text {
+        font-size: 2rem;
+    }
+
+    .blue-text2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Button Styling */
+.explore-button {
+    background-color: #04A5E5;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.explore-button:hover {
+    background-color: #0378A6;
+}
+
+/* Fix Scroll Issues */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+/* Fix Full-Width Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Card Size Adjustment */
+.card-large {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Hover Glow Effect */
+.card-large:hover {
+    box-shadow: 0px 0px 40px rgba(4, 165, 229, 0.5);
+}

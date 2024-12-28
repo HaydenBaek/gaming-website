@@ -1,0 +1,202 @@
+/* Animation for Gradient Text */
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* General Section Styling */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    background-attachment: fixed;
+}
+
+/* Keep content above background */
+.section > * {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* SteelSeries First Section */
+.steelseriesFirst {
+    background-image: url("/Users/haydenbaek/Desktop/side_projects/gaming-website/frontend/src/images/steelseriesBackground.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+/* Section 2 - Black Background */
+.steelseriesSecond {
+    background-image: linear-gradient(45deg, #a5a7aa, #4d4d4d, #2d2d2d, #1c1c1c );
+    animation: rainbowAnimation 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+
+.steelseriesThird {
+    background-image: linear-gradient(45deg, #E31837, #FF5200, #FF7033, #FF9E77, #E64800, #CC4000, #B3B3B3);
+    animation: rainbowAnimation 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.steelseriesFourth {
+    background-image: url('https://media.steelseriescdn.com/blog/posts/official-steelseries-wallpapers/0ce1798a291d43ebadfb4bc4a35fbddc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+}
+
+
+.steelseriesFifth {
+    background-image: url('https://media.steelseriescdn.com/blog/posts/official-steelseries-wallpapers/a1d690d14f544f9b92c633ef70702ee0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Ensure banner stays at the top middle */
+.steelseriesFirst > * {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Banner and Typography Styles */
+.welcome-banner {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Red Gradient Text */
+.explore-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #E31837, #FF5200, #FF7033, #FF9E77, #E64800, #CC4000, #B3B3B3);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    animation: rainbowAnimation 3s ease infinite;
+    text-align: center;
+}
+
+.black-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, white, #E31837, #FF6347);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    animation: rainbowAnimation 5s ease infinite;
+    text-align: center;
+}
+
+/* Responsive Section Content */
+.section-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Card Styling */
+.product-card {
+    max-width: 500px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Media Image */
+.card-media {
+    object-fit: contain;
+    width: 100%;
+    max-height: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding-top: 80px;
+    }
+
+    .blue-text {
+        font-size: 2rem;
+    }
+
+    .blue-text2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Button Styling */
+.explore-button {
+    background-color: #E31837;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.explore-button:hover {
+    background-color: #B80F28;
+}
+
+/* Fix Scroll Issues */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Fix Full-Width Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Card Size Adjustment */
+.card-large {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Hover Glow Effect */
+.card-large:hover {
+    box-shadow: 0px 0px 40px rgba(227, 24, 55, 0.5);
+}

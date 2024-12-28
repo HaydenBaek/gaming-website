@@ -10,7 +10,7 @@ import AboutUs from './pages/AboutUs';
 import Logitech from './pages/Logitech';
 import Razer from './pages/Razer';
 import Corsair from './pages/Corsair';
-import Alienware from './pages/Alienware';
+import Steelseries from './pages/Steelseries';
 import HyperX from './pages/HyperX';
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
         <Route path="/logitech" element={<Logitech />} />
         <Route path="/razer" element={<Razer />} />
         <Route path="/corsair" element={<Corsair />} />
-        <Route path="/alienware" element={<Alienware />} />
         <Route path="/hyperx" element={<HyperX />} />
+        <Route path="/steelseries" element={<Steelseries />} />
       </Routes>
     </Router>
   );

@@ -483,7 +483,7 @@ function Logitech() {
   }, []);
 
   return (
-    <div className="logitech-page" style={{backgroundColor: 'black', textAlign: 'center', marginTop: '60px' }}>  
+    <div className="logitech-page" style={{backgroundColor: 'black', textAlign: 'center', marginTop: '40px' }}>  
       
       {/* Section 1 - Banner */}
       <div className="logitechFirst">

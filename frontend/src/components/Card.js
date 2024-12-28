@@ -14,6 +14,8 @@ import Logitech from '../images/logitech.png';
 import Alienware from '../images/alienware.png';
 import HyperX from '../images/hyperX.png';
 import Corsair from '../images/corsair.png';
+import Steelseries from '../images/Steelseries-logo.png';
+import Wooting from '../images/wooting.png'
 
 const gamingBrands = [
     {
@@ -41,11 +43,11 @@ const gamingBrands = [
         link: "/hyperx"
     },
     {
-        title: "Alienware",
+        title: "Steelseries",
         description: "High-end gaming laptops and desktops.",
-        image: Alienware,
-        link: "/alienware"
-    }
+        image: Steelseries,
+        link: "/steelseries"
+    },
 ];
 
 export default function MultiActionAreaCard() {
