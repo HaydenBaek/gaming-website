@@ -15,11 +15,11 @@ import Alienware from '../images/alienware.png';
 import HyperX from '../images/hyperX.png';
 import Corsair from '../images/corsair.png';
 import SteelSeries from '../images/Steelseries-logo.png';
-import Wooting from '../images/wooting.png';
 
 import '../styles/Slide.css';
 
 const Slide = () => {
+    const swiperRef = useRef(null);
 
     useEffect(() => {
         const swiperInstance = swiperRef.current?.swiper;
@@ -28,8 +28,6 @@ const Slide = () => {
         }
     }, []);
 
-    const swiperRef = useRef(null);
-
     // Manual navigation handlers
     const handlePrev = () => {
         swiperRef.current?.swiper.slidePrev();
@@ -37,6 +35,20 @@ const Slide = () => {
 
     const handleNext = () => {
         swiperRef.current?.swiper.slideNext();
+    };
+
+    // Brand images and URLs
+    const brands = [
+        { img: Razer, url: '/Razer' },
+        { img: Logitech, url: '/Logitech' },
+        { img: HyperX, url: '/HyperX' },
+        { img: Corsair, url: '/Corsair' },
+        { img: SteelSeries, url: '/SteelSeries' }
+    ];
+
+    // Handle slide click
+    const handleSlideClick = (url) => {
+        window.location.href = url;  // Navigate without opening a new tab
     };
 
     return (
@@ -56,14 +68,13 @@ const Slide = () => {
                     modifier: 3.5,
                     slideShadows: false,
                 }}
-                navigation={true}  // Important: Directly enable navigation
-                modules={[EffectCoverflow, Navigation]}  // Ensure Navigation is passed as a module
+                navigation={true}  // Directly enable navigation
+                modules={[EffectCoverflow, Navigation]}  // Ensure Navigation is passed
             >
-
-                {[Razer, Logitech, Alienware, HyperX, Corsair, SteelSeries, Wooting].map((img, index) => (
-                    <SwiperSlide key={index}>
+                {brands.map((brand, index) => (
+                    <SwiperSlide key={index} onClick={() => handleSlideClick(brand.url)}>
                         <div className='slide-wrapper'>
-                            <img src={img} alt="brand" />
+                            <img src={brand.img} alt="brand" />
                         </div>
                     </SwiperSlide>
                 ))}
@@ -79,3 +90,5 @@ const Slide = () => {
 };
 
 export default Slide;
+
+

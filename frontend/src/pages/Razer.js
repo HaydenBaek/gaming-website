@@ -347,7 +347,7 @@ function Razer() {
           glowColorEnd="#66B933"
           buttonText="Explore Razer"
           buttonColor="#66B933"
-          link="https://www.logitechg.com/en-ca"
+          link="https://www.razer.com/ca-en/store/gaming-mice?utm_source=google&utm_medium=google-shopping&utm_campaign=210101_RS_TXN_MID_CA_EGR-peripherals_TR&cid=210101_RS_TXN_MID_CA_EGR-peripherals_TR&gad_source=1&gclid=Cj0KCQiA4L67BhDUARIsADWrl7GvbkRPN-CVnrezY5dI68SIEdbfGLjoW1djhG86WCqsPjCNn8pZvD4aAnayEALw_wcB"
         />
       </div>
 
@@ -357,7 +357,7 @@ function Razer() {
             Explore Gaming Gears
           </Typography>
           <Typography variant="h5" sx={{ marginBottom: '50px', color: 'grey' }}>
-            Discover cutting-edge peripherals designed for gamers by Logitech.
+            Discover cutting-edge peripherals designed for gamers by Razer.
           </Typography>
           
           <Typography variant="h3" className="blue-text2" sx={{ marginBottom: '40px' }}>

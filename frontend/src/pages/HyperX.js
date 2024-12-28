@@ -334,7 +334,7 @@ const hyperXHeadsets = [
               Explore Gaming Gears
             </Typography>
             <Typography variant="h5" sx={{ marginBottom: '50px', color: 'grey' }}>
-              Discover cutting-edge peripherals designed for gamers by Logitech.
+              Discover cutting-edge peripherals designed for gamers by HyperX.
             </Typography>
             
             <Typography variant="h3" className="blue-text2" sx={{ marginBottom: '40px' }}>

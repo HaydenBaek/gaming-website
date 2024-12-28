@@ -21,7 +21,6 @@ function Navbar() {
           Gaming Gear
         </Typography>
         <Button color="inherit" component={Link} to="/" sx={{ fontSize: '1.1rem' }}>Home</Button>
-        <Button color="inherit" component={Link} to="/products" sx={{ fontSize: '1.1rem' }}>Products</Button>
         <Button color="inherit" component={Link} to="/blog" sx={{ fontSize: '1.1rem' }}>Blog</Button>
         <Button color="inherit" component={Link} to="/aboutUs" sx={{ fontSize: '1.1rem' }}>About Us</Button>
       </Toolbar>

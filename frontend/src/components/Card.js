@@ -11,11 +11,9 @@ import { Link } from 'react-router-dom';
 // Import images of brands
 import Razer from '../images/razer.jpg';
 import Logitech from '../images/logitech.png';
-import Alienware from '../images/alienware.png';
 import HyperX from '../images/hyperX.png';
 import Corsair from '../images/corsair.png';
 import Steelseries from '../images/Steelseries-logo.png';
-import Wooting from '../images/wooting.png'
 
 const gamingBrands = [
     {
